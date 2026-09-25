@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#23343f">
+  <meta name="description" content="又是一年中秋。无论相隔多远，都愿这轮明月为你带去一份温暖的祝福。">
+  <meta property="og:title" content="月下有书信">
+  <meta property="og:description" content="一封月下书信，一份中秋祝福。轻触开启。">
+  <meta property="og:type" content="website">
+  <title>月下有书信 · 中秋快乐</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2323343f'/%3E%3Ccircle cx='43' cy='20' r='10' fill='%23d9c59c'/%3E%3Cpath d='M12 28h40v24H12z' fill='%23ece2ce'/%3E%3Cpath d='m12 28 20 15 20-15' fill='none' stroke='%23956955' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="night" aria-hidden="true"><div class="moon"></div><img class="osmanthus" src="assets/osmanthus-twig.png" width="1536" height="1024" alt="" decoding="async"><div class="horizon"></div></div>
+  <main id="experience" data-state="closed">
+    <header class="masthead"><p class="occasion">中 秋 · 寄 意</p><h1>月下有书信</h1><div class="title-rule" aria-hidden="true"></div></header>
+    <section id="letter-view" aria-label="一封中秋来信">
+      <div class="mail-stage" id="mail-stage">
+        <div class="envelope" aria-hidden="true"><div class="envelope-back"></div><div class="pocket"></div><div class="flap"><div class="flap-front"></div><div class="flap-back"></div></div><span class="seal">月</span><span class="envelope-inscription">遥 寄 · 平 安</span></div>
+        <article class="letter" id="letter" aria-label="中秋祝福" aria-hidden="true">
+          <div class="paper-panel paper-top"><span class="letter-overline">一笺秋意，见字如晤</span><p id="greeting-first"></p></div>
+          <div class="paper-panel paper-middle"><p id="greeting-body"></p></div>
+          <div class="paper-panel paper-bottom"><p id="greeting-last"></p><div class="signature"><span class="signature-line"></span><span>共此明月</span><span class="small-seal" aria-hidden="true">秋</span></div></div>
+        </article>
+        <button class="open-envelope" id="open-envelope" type="button" aria-label="开启一封月下书信"><span class="sr-only">轻触，开启一封月下书信</span></button>
+      </div>
+      <p class="invitation" id="invitation">轻触，开启一封月下书信</p>
+      <div class="letter-actions" id="letter-actions" hidden><button class="paper-button" id="show-card" type="button">查看随信附上的贺卡 <span aria-hidden="true">↗</span></button><button class="quiet-button" id="replay" type="button">重新读信</button></div>
+    </section>
+    <section id="card-view" class="card-view" aria-labelledby="card-heading" hidden>
+      <div class="card-intro"><p class="occasion">随 信 · 附 笺</p><h2 id="card-heading">山海同月，天涯此时</h2></div>
+      <div class="card-image-wrap"><img id="greeting-card" width="1536" height="1024" alt="中秋贺卡：桂花枝下的亭台与玉兔，远山、湖水和一轮明月相映。" decoding="async" loading="lazy" tabindex="0" role="button" aria-label="放大查看中秋贺卡"></div>
+      <p class="image-status" id="image-status" role="status" hidden></p>
+      <p class="image-hint">轻触看大图 · 长按图片可保存</p>
+      <p class="card-wish">愿岁岁常欢愉，年年皆胜意。</p>
+      <div class="card-actions"><button class="quiet-button" id="back-letter" type="button">返回书信</button><button class="quiet-button" id="replay-card" type="button">再看一次开信</button></div>
+    </section>
+    <footer class="page-footer"><span>一轮明月</span><span class="footer-dot" aria-hidden="true">·</span><span>一份牵挂</span></footer>
+  </main>
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="中秋贺卡大图" hidden><div class="lightbox-toolbar"><span>中秋 · 随信附笺</span><div><button id="fit-image" class="close-button" type="button">适应屏幕</button> <button id="close-lightbox" class="close-button" type="button" aria-label="关闭大图">关闭 <span aria-hidden="true">×</span></button></div></div><div class="lightbox-scroll"><img id="large-card" width="1536" height="1024" alt="原始中秋贺卡，可长按保存图片"></div><p>滑动查看 · 双指可放大 · 长按可保存</p></div>
+  <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+  <noscript><section class="no-script"><h2>又是一年中秋。</h2><p>无论相隔多远，都愿这轮明月为你带去一份温暖的祝福。</p><p>中秋快乐，愿一切安好！</p><img src="assets/mid-autumn-card.png" width="1536" height="1024" alt="中秋贺卡"></section><style>#experience{display:none}</style></noscript>
+</body>
+</html>

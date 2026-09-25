@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-25T06:43:44.332Z",
+  "engine": "153.0.8010.53",
+  "checks": [
+    "390px: complete flow, 3D motion, original ratio, lightbox, replay",
+    "320px: no clipping",
+    "375px: no clipping",
+    "430px: no clipping",
+    "768px: no clipping",
+    "1440px: no clipping",
+    "reduced motion: direct open",
+    "200% text: no clipping"
+  ],
+  "originalSHA256": "b9ba9ccd10e97519a0a18d5cb1783a272cc13ef338c079a964c93330cfde0f78",
+  "runtimeErrors": [],
+  "webkitAvailable": false,
+  "limits": "Mobile viewport/touch emulation in Chromium; actual WeChat and iPhone Safari not yet tested."
+}

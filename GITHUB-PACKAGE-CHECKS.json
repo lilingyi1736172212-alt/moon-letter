@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-25T07:20:14.461Z",
+  "checks": [
+    "Absolute share URL preserves project subpath; repeated build is idempotent; HTTP rejected",
+    "Original greeting card unchanged",
+    "390px local page: open, current blessing, original image, lightbox, replay",
+    "Cover loads at 1536 x 1024; no page errors"
+  ],
+  "runtimeErrors": [],
+  "deployed": false,
+  "limits": "GitHub Actions and mainland WeChat connectivity await actual deployment; local Chromium only."
+}
